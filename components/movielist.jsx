@@ -1,10 +1,12 @@
-// components/MovieList.js
+// components/movielist.jsx
+"use client";
+
 import React from 'react';
 import MovieCard from './moviecard';
 
 const MovieList = ({ movies }) => {
   return (
-    <div className="flex align-items justify-items p-10">
+    <div className="flex flex-wrap justify-center m-3">
       {movies.map((movie) => (
         <MovieCard key={movie.imdbID} movie={movie} />
       ))}

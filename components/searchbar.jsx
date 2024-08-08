@@ -1,16 +1,17 @@
 // got assistance of gpt for assigning the props to the searchbar constant
 "use client"
 import React, { useState } from 'react';
-
+import { useRouter } from 'next/navigation';
 const SearchBar = ({ onSearch }) => {
   const [query, setQuery] = useState('');
-
+const router = useRouter()
   const handleSearch = () => {
     if(!query.trim()){
 alert("Pls input the movie")
       return ;
     }
     onSearch(query);
+    router.push(`/?query=${query}`);
   };
 
   return (

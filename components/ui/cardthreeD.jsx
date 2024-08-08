@@ -1,3 +1,4 @@
+//component from acernity ui library "https://ui.aceternity.com/components/3d-card-effect"
 "use client";;
 import { cn } from "@/lib/utils";
 import React, {
@@ -70,7 +71,7 @@ export const CardBody = ({
   return (
     (<div
       className={cn(
-        "h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
+        "h-65 w-65 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
         className
       )}>
       {children}
