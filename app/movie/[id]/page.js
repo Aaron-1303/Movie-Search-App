@@ -1,14 +1,8 @@
-// app/movie/[id]/page.js
+
+//  got reference from this article "https://tutorend.com/tutorials/social-sharing-in-react-next-js-with-react-share"
 "use client";
 import { useEffect, useState } from 'react';
-import {
-    LinkedinShareButton,
-    TwitterShareButton,
-    WhatsappShareButton,
-    LinkedinIcon,
-    TwitterIcon,
-    WhatsappIcon
-} from "react-share";
+import {LinkedinShareButton,TwitterShareButton,WhatsappShareButton,LinkedinIcon,TwitterIcon,WhatsappIcon} from "react-share";
 const MovieDetail = ({ params }) => {
     const { id } = params;
     const [movie, setMovie] = useState(null);

@@ -1,4 +1,4 @@
-// components/moviecard.jsx
+
 "use client";
 
 import React from 'react';
